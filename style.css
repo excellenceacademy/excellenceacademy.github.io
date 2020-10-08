@@ -1,0 +1,152 @@
+body { background: rgba(0,0,40,.1);}
+
+#logo{
+width: 105%;
+margin-left: -2.5%;
+margin-top: -4%;
+border-radius: 0 0 70% 20%/ 0 0 10% 30%;
+box-shadow: 0 5px 30px rgba(0,0,0,.5);
+}
+.info{
+color: gray;
+font-family: cursive;
+font-size: 24px;
+margin: 50px 30px 50px 10px;
+margin-left: 40px;
+background: rgba(0,0,255,.01);
+padding: 30px 10px 50px 10px;
+padding-left: 30px;
+border-radius: 50px 5px 50px 5px;
+box-shadow: 5px 5px 30px rgba(0,0,0,.1),-5px -5px 30px white;   
+
+}
+.info:hover{
+box-shadow:inset 2px 2px 10px rgba(0,0,0,.15),inset -2px -2px 10px white;   
+}
+.line{
+background: #0B114A;
+height: 20px;
+width: 50%;
+border-radius: 10px;
+margin: 30px auto;
+}
+#names{
+text-align: center;
+font-size: 50px;
+color: #0B114A;
+}
+
+.info a{
+color: #0B114A;
+text-decoration: none;
+}
+.box{display: flex; font-size: 45px; margin-left: 30px;}
+.box a{
+margin: 20px;
+text-decoration: none;
+color: rgba(0,0,0,.2);
+}
+.box .main{
+color: #0B114A;
+border-bottom: 10px solid #0B114A;
+transition: 0.5s;
+border-radius: 10px;
+}
+footer{display: none;}
+.bawk{margin-left: 30%;position: relative;margin-bottom: 90%;}
+
+// form //{}
+
+.join{
+position: fixed;
+z-index: 10000;
+right: 20px;
+bottom: 20px;
+box-shadow: 0 0 20px rgba(0,0,0,.3);
+background-color: #0B144A;
+color: white;
+height: 60px;
+width: 180px;
+font-size: 40px;
+padding: 10px;
+text-decoration: none;
+font-family: cursive;
+border-radius: 50px 10px 50px 10px;
+transition: 0.3s;
+display: block;
+text-align: center;
+}
+.button{
+background-color: #0B144A;
+color: white;
+font-size: 40px;
+padding: 10px;
+text-decoration: none;
+font-family: cursive;
+border-radius: 50px 10px 50px 10px;
+transition: 0.3s;
+text-align: center;
+}
+.button:hover{box-shadow: 0 0 30px rgba(20,0,100,.5)}
+
+.form{
+box-shadow: 5px 5px 10px rgba(0,0,0,.1),-5px -5px 10px white;   
+border-radius: 50px;
+font-family: cursive;
+font-size: 44px;
+color: #0B144A;
+text-align: center;
+padding: 20px;
+}
+input{
+border-radius: 20px;
+font-family: cursive;
+padding:5px 25px;
+width: 50%;
+height: 44px;
+font-size: 44px;
+color: black;
+text-align: left;
+}
+#name{
+border-radius: 20px;
+font-family: cursive;
+padding:5px 25px;
+width: 50%;
+height: 44px;
+font-size: 44px;
+color: black;
+text-align: left;
+}
+
+label{ 
+font-size: 30px;
+margin-right: 30px;
+color: black;
+}
+.form h1{text-align: center;}
+select{
+font-size: 30px;
+font-family: cursive;
+padding: 5px 25px;
+}
+#note{font-size: 20px;opacity: 0.5;font-family: cursive;}
+.form .button{font-size: 50px;padding: 10px 50px;text-align: center;}
+
+.waterm{
+font-size: 10px;
+color: black;
+opacity: 0.2;
+font-family: monospace;
+margin-bottom: -30px;
+}
+.form h2{
+font-size: 120px;
+color: rgba(0,0,0,.1);
+z-index: -1;
+position: absolute;
+left: 8%;
+top: 50%;
+transform: rotate(-30deg);
+}
+

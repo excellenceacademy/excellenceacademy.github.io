@@ -1,0 +1,74 @@
+<!doctype html>
+<html> 
+<head> 
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<title> Excellence Academy </title>     
+
+</head> 
+<body>
+   <img id="logo" src="image/logo.png">  </img>
+<p class="line">  </p>
+
+<div class="form" id="specific"> 
+<h2> Excellence Academy</h2>
+<p class="waterm"></p> 
+<h1> Admission Form </h1> 
+<p> Name: <input placeholder="Enter your name here" id="name" required> </input> </p> 
+<p> Class: 
+<select id="class"> 
+<option> VII </option> 
+<option> VIII </option> 
+<option> IX </option> 
+<option> X </option> 
+<option> XI </option> 
+<option> XII </option> 
+</select> 
+<p>Board: 
+<select id="board"> 
+<option> WBBSE </option> 
+<option> WBCHSE </option> 
+<option> CBSE </option> 
+<option> ICSE </option> 
+</select> 
+<p>I want to study: 
+<select id="subject"> 
+<option> Mathematics </option> 
+<option> Biology </option> 
+<option> NEET </option> 
+<option> WBJEE </option> 
+<option> JEE (Main) </option> 
+<option> BCA (Maths) </option> 
+<option> JEXPO (Maths) </option> 
+</select> 
+<p> Study Type: 
+<select id="type"> 
+<option> Batch Coaching (Low Price)</option> 
+<option> Separate Coaching (Medium price)</option> 
+<option> Home Coaching (High Price)</option> 
+</select> </p> 
+<p>Place I live: 
+<input placeholder="Exact place you live" id="place"> 
+<p> Communicate With:
+    <select id="cw">  
+    <option> Whatsapp </option>
+    <option> G-mail </option>
+    </select>
+     </p>
+</input> 
+</p><button type="button" onclick="join()" class="button"> Join </button></p>
+</div> 
+<p id="note"> 
+<strong> Note: </strong> After clicking Join button, you will be redirected to your selected communication method (gmail or whatsapp), then you have to click on the send button and that's all!</p> 
+</p> 
+</body>    
+<script>  
+function join(){
+if(document.getElementById("cw").value === "G-mail"){
+var gm = "mailto:excellenceacademy1823@gmail.com?subject=Admission Request&&body= Hi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". I want to study in " + document.getElementById("type").value + ". I live in " + document.getElementById("place").value + ". Sir, you are requested to reply as soon as possible."   ;
+window.location.href = gm;};
+if(document.getElementById("cw").value === "Whatsapp"){
+var wa = "https://wa.me/+919007558859?text=*_Admission Request_*%0a%0aHi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". I want to study in " + document.getElementById("type").value + ". I live in " + document.getElementById("place").value + ". Sir, you are requested to reply as soon as possible."   ;
+window.location.href = wa;}
+}
+</script>
+</html>
