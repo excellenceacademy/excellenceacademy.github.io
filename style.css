@@ -89,14 +89,55 @@ text-align: center;
 }
 .button:hover{box-shadow: 0 0 30px rgba(20,0,100,.5)}
 
-.form{
-box-shadow: 5px 5px 10px rgba(0,0,0,.1),-5px -5px 10px white;   
-border-radius: 50px;
-font-family: cursive;
-font-size: 44px;
-color: #0B144A;
-text-align: center;
-padding: 20px;
+.form {
+  position: relative;
+  margin: 40px auto;
+  width: 90%;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-radius: 2px;
+  font-family: cursive;
+  font-size: 50px;
+  color: #0B144A;
+}
+.form::before,
+.form::after {
+  content: '';
+  position: absolute;
+  background: darkgray;
+  bottom: 10px;
+  width: 40%;
+  height: 10px;
+  box-shadow: 0 5px 14px rgba(0,0,0,.7);
+  z-index: -1;
+  transition: all .3s ease-in-out;
+}
+
+.form::before {
+  left: 15px;
+  transform: skew(-5deg) rotate(-5deg);
+}
+
+.form::after {
+  right: 15px;
+  transform: skew(5deg) rotate(5deg);
+}
+.form:hover::before,
+.form:hover::after {
+  box-shadow: 0 2px 14px rgba(0,0,0,.4);
+}
+
+.form:hover::before {
+  left: 5px;
+}
+
+.form:hover::after {
+  right: 5px;
+}
+select{
+background-color: #fff;
+border: none;
+font-size: 45px;
 }
 input{
 border-radius: 20px;
@@ -104,19 +145,26 @@ font-family: cursive;
 padding:5px 25px;
 width: 50%;
 height: 44px;
-font-size: 44px;
+font-size: 45px;
 color: black;
 text-align: left;
+border: none;
 }
 #name{
 border-radius: 20px;
 font-family: cursive;
 padding:5px 25px;
-width: 50%;
 height: 44px;
-font-size: 44px;
+font-size: 45px;
 color: black;
 text-align: left;
+}
+
+.form h1{text-align: center;}
+select{
+font-size: 45px;
+font-family: cursive;
+padding: 5px 25px;
 }
 
 label{ 
