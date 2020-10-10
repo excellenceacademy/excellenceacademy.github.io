@@ -94,7 +94,7 @@ text-align: center;
   margin: 40px auto;
   width: 90%;
   padding: 20px 40px;
-  background-color: #fff;
+  background-color: #fbfbf8;
   border-radius: 2px;
   font-family: cursive;
   font-size: 50px;
@@ -137,15 +137,17 @@ text-align: center;
 select{
 background-color: #fff;
 border: none;
-font-size: 45px;
+font-size: 50px;
+background: transparent;
 }
 input{
 border-radius: 20px;
 font-family: cursive;
+background: transparent;
 padding:5px 25px;
 width: 50%;
 height: 44px;
-font-size: 45px;
+font-size: 50px;
 color: black;
 text-align: left;
 border: none;
@@ -155,7 +157,7 @@ border-radius: 20px;
 font-family: cursive;
 padding:5px 25px;
 height: 44px;
-font-size: 45px;
+font-size: 50px;
 color: black;
 text-align: left;
 }
@@ -174,7 +176,7 @@ color: black;
 }
 .form h1{text-align: center;}
 select{
-font-size: 30px;
+font-size: 50px;
 font-family: cursive;
 padding: 5px 25px;
 }
