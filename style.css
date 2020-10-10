@@ -135,10 +135,11 @@ text-align: center;
   right: 5px;
 }
 select{
-background-color: #fff;
 border: none;
-font-size: 50px;
+font-size: 44px;
 background: transparent;
+font-family: cursive;
+padding: 5px 25px;
 }
 input{
 border-radius: 20px;
@@ -157,17 +158,12 @@ border-radius: 20px;
 font-family: cursive;
 padding:5px 25px;
 height: 44px;
-font-size: 50px;
+font-size: 44px;
 color: black;
 text-align: left;
 }
 
 .form h1{text-align: center;}
-select{
-font-size: 45px;
-font-family: cursive;
-padding: 5px 25px;
-}
 
 label{ 
 font-size: 30px;
@@ -175,11 +171,7 @@ margin-right: 30px;
 color: black;
 }
 .form h1{text-align: center;}
-select{
-font-size: 50px;
-font-family: cursive;
-padding: 5px 25px;
-}
+
 #note{font-size: 20px;opacity: 0.5;font-family: cursive;}
 .form .button{font-size: 50px;padding: 10px 50px;text-align: center;}
 
