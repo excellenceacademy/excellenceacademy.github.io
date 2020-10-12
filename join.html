@@ -41,14 +41,9 @@
 <option> BCA (Maths) </option> 
 <option> JEXPO (Maths) </option> 
 </select> 
-<p> Study Type: 
-<select id="type"> 
-<option> Batch Coaching (Low Price)</option> 
-<option> Separate Coaching (Medium price)</option> 
-<option> Home Coaching (High Price)</option> 
-</select> </p> 
-<p>Place I live: 
-<input placeholder="Exact place you live" id="place"> 
+<p>Contact no.: <input id="type" type="number"> </input></p> 
+<p> Address: 
+<input placeholder="Address" id="place"> 
 <p> Communicate With:
     <select id="cw">  
     <option> Whatsapp </option>
@@ -65,10 +60,10 @@
 <script>  
 function join(){
 if(document.getElementById("cw").value === "G-mail"){
-var gm = "mailto:excellenceacademy1823@gmail.com?subject=Admission Request&&body= Hi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". I want to study in " + document.getElementById("type").value + ". I live in " + document.getElementById("place").value + ". Sir, you are requested to reply as soon as possible."   ;
+var gm = "mailto:excellenceacademy1823@gmail.com?subject=Admission Request&&body= Hi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". My contact no. is " + document.getElementById("type").value + ". My address is " + document.getElementById("place").value + ". Sir, you are requested to reply as soon as possible."   ;
 window.location.href = gm;};
 if(document.getElementById("cw").value === "Whatsapp"){
-var wa = "https://wa.me/+919007558859?text=*_Admission Request_*%0a%0aHi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". I want to study in " + document.getElementById("type").value + ". I live in " + document.getElementById("place").value + ". Sir, you are requested to reply as soon as possible."   ;
+var wa = "https://wa.me/+919007558859?text=*_Admission Request_*%0a%0aHi sir, I am " + document.getElementById("name").value + ". I read in class " + document.getElementById("class").value + ". My school is of " + document.getElementById("board").value + " board. I want to study " + document.getElementById("subject").value + ". My contact no. is " + document.getElementById("type").value + ". My address is *" + document.getElementById("place").value + "*. Sir, you are requested to reply as soon as possible."   ;
 window.location.href = wa;}
 }
 </script>
