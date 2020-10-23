@@ -196,5 +196,6 @@ transform: rotate(-30deg);
 .bawk{
 text-align: center;
 }
-.ico{text-align: center; display: flex;text-decoration: none;margin: 10px;font-size: 50px;}
+.bottom{text-align: center; display: flex;text-decoration: none;}
+.fab{text-align: center;text-decoration: none;margin: 10px;font-size: 50px;}
 .fa-youtube{color: red;}
