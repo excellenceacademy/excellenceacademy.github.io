@@ -23,6 +23,7 @@ box-shadow: 5px 5px 30px rgba(0,0,0,.1),-5px -5px 30px white;
 .subject{
 color: #0B114A;
 }
+strong{color: #0B114A;}
 .info:hover{
 box-shadow:inset 2px 2px 10px rgba(0,0,0,.15),inset -2px -2px 10px white;   
 }
