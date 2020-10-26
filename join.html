@@ -10,7 +10,7 @@
    <img id="logo" src="image/logo.png">  </img>
 <p class="line">  </p>
 
-<div class="form" id="specific"> 
+<form onsubmit="join()">
 <h2> Excellence Academy</h2>
 <p class="waterm"></p> 
 <h1> Admission Form </h1> 
@@ -44,9 +44,9 @@
 <option> BBA (Maths) </option> 
 <option> Polytechnique (Maths) </option> 
 </select> 
-<p>Contact no.: <input id="type" type="number" placeholder="Your Contact Number"> </input></p> 
+<p>Contact no.: <input id="type" type="number" placeholder="Your Contact Number" required> </input></p> 
 <p> Address: 
-<input placeholder="Your Local Address" id="place" onchange="big()"> 
+<input placeholder="Your Local Address" id="place" onchange="big()" required> 
 <p> Communicate With:
     <select id="cw">  
     <option> Whatsapp </option>
@@ -54,8 +54,8 @@
     </select>
      </p>
 </input> 
-</p><button type="button" onclick="join()" class="button"> Join </button></p>
-</div> 
+</p><input type="submit"> </input></p>
+</form> 
 <div id="note">
 <p> <strong> Important Notes- </strong> </p>
 <p>1. After clicking Join button, you will be redirected to your selected communication method (gmail or whatsapp), then you have to click on the send button and that's all!</p>
