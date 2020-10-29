@@ -15,15 +15,40 @@
 <p class="waterm"></p> 
 <h1> Admission Form </h1> 
 <p> Name: <input placeholder="Enter your name here" id="name" required> </input> </p> 
-<p> Class: 
-<select id="class"> 
-<option> VII </option> 
-<option> VIII </option> 
-<option> IX </option> 
-<option> X </option> 
-<option> XI </option> 
-<option> XII </option> 
-</select> 
+<p> You are studying in: 
+<select onchange="call()" id="class">  
+<option value="in class VII"> VII </option>
+<option value="in class VII"> VIII </option>
+<option value="in class IX"> IX </option>
+<option value="in class X"> X </option>
+<option value="in class XI"> XI </option>
+<option value="in class XII"> XII </option>
+<option value="BCA"> BCA </option>
+<option value="BBA"> BBA </option>
+<option value="Polytechnique"> Polytechnique </option>
+<option value="JEXPO"> JEXPO </option>
+</select> </p>
+<p>You want to study:
+<select onchange="getValue(0)" class="select" id="low" multiple="multiple">
+  <option value=" maths">Maths</option>
+  <option value=" physical science">Physical Science</option>
+  <option value=" life science">Life Science</option>
+</select>
+
+<select onchange="getValue(1)" class="select" id="med" multiple="multiple">
+  <option value=" maths">Maths</option>
+  <option value=" physics">Physics</option>
+  <option value=" biology">Biology</option>
+  <option value=" NEET">NEET</option>
+  <option value=" WBJEE">WBJEE</option>
+  <option value=" JEE (Main)">JEE (Main)</option>
+</select>
+
+<select onchange="getValue(2)" class="select" id="hig" multiple="multiple">
+  <option value=" mathematics"> Mathematics</option>
+</select></p>
+<p>Your selected subject(s) are <input id="subject" readonly>  </input></p>
+
 <p>Board: 
 <select id="board"> 
 <option> WBBSE </option> 
@@ -32,18 +57,7 @@
 <option> ICSE </option> 
 <option> ISC </option>
 </select> 
-<p>I want to study: 
-<select id="subject"> 
-<option> Mathematics </option> 
-<option> Biology </option> 
-<option> NEET </option> 
-<option> WBJEE </option> 
-<option> JEE (Main) </option> 
-<option> BCA (Maths) </option> 
-<option> JEXPO (Maths) </option> 
-<option> BBA (Maths) </option> 
-<option> Polytechnique (Maths) </option> 
-</select> 
+
 <p>Contact no.: <input id="type" type="tel" size='10' pattern="[0-9]{10}" placeholder="Enter a valid phone number" required> </input></p> 
 <p> Address: 
 <input placeholder="Your Local Address" id="place" onchange="big()" required> 
