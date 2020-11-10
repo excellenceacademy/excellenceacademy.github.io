@@ -140,6 +140,7 @@ background: transparent;
 font-family: cursive;
 padding: 5px 25px;
 outline: none;
+width: 50%;
 }
 input{
 border-radius: 20px;
